@@ -1,3 +1,3 @@
-# graph-ql library
+# Graph-ql Library
 
 A MERN full-stack web application for a library database that uses graphql and the MERN stack.

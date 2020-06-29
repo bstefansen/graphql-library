@@ -11,7 +11,7 @@ app.use(cors());
 
 // connect to mongoDB database
 // mongoDB won't connect
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://bstefansen:fartblossom1234@cluster0-mbz6o.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true });
 mongoose.connection.once('open', () => {
   console.log('Connected to database 📙');
 })

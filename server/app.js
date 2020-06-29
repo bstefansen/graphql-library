@@ -13,7 +13,7 @@ app.use(cors());
 // mongoDB won't connect
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 mongoose.connection.once('open', () => {
-  console.log('connected to database');
+  console.log('Connected to database 📙');
 })
 
 app.use('/graphql', graphqlHTTP({
@@ -21,6 +21,10 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true
 }));
 
-app.listen(4000, () => {
-  console.log('now listening for requests on port 4000');
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static('client/build'))
+}
+
+app.listen(process.env.PORT || 4000, () => {
+  console.log('now listening for requests on port', process.env.PORT);
 })

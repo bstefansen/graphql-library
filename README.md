@@ -1,6 +1,5 @@
 # GraphQL Library
 
-## Description
 A MERN full-stack web application for a library database that uses GraphQL
 
 ## Why

@@ -2,7 +2,7 @@
 
 A MERN full-stack web application for a library database that uses GraphQL
 
-![](https://stefansen-graphql-library.herokuapp.com/)
+![GraphQL Libary Screenshot](https://bstefansen.github.io/Portfolio/images/GraphQL-Library3.JPG)
 
 ## Why
 I built this project to better understand GraphQL and the MERN stack. This also helped in understanding Apollo to connect GraphQL to the client
